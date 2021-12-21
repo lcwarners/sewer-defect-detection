@@ -21,6 +21,7 @@ EfficientNetB1 was finetuned using this notebook. Transfer learning was applied 
 ## prediction and visualisation
 In this notebook, the weights are loaded and used to generate predictions on a test batch of 600 images. The accuracy is calculated and the wrongly classified images are inspected.
 
-## video 
+## analyze video 
+This notebook is most important for direct application. It takes a video as input and outputs a list of timestamps in which the model detects a defect (either fissure or racine). 
 
 ## active learning
