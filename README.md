@@ -11,7 +11,11 @@ To handle videos files, os and moviepy are used.
 
 #### Please note that we were unable to provide the data on which this model was evaluated due to its confidential nature.
 
-# Directories
+# directories
 ## comparison and optimisation
 The three notebooks in these directories were used to compare model performance of ResNet50, EfficientNetB1, and EfficientNetB7, immediately clear from the names of the notebooks. The working of the notebooks is identical: the batches are generated, the model is downloaded and dense layers appended, and the original model is frozen such that it functions as feature extractor. The added dense layers are trained using the train data and validated with the valid batches.
 
+## fine tuning
+EfficientNetB1 was finetuned using this notebook. Transfer learning was applied first, subsequently the last 10 layers were unfrozen (excepting batch normalisation). The training is implemented using early stopping and the weights are saved for later use.
+
+## prediction and visualisation
