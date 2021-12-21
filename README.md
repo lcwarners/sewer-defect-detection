@@ -19,3 +19,8 @@ The three notebooks in these directories were used to compare model performance 
 EfficientNetB1 was finetuned using this notebook. Transfer learning was applied first, subsequently the last 10 layers were unfrozen (excepting batch normalisation). The training is implemented using early stopping and the weights are saved for later use.
 
 ## prediction and visualisation
+In this notebook, the weights are loaded and used to generate predictions on a test batch of 600 images. The accuracy is calculated and the wrongly classified images are inspected.
+
+## video 
+
+## active learning
