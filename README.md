@@ -2,7 +2,7 @@
 ### CS-433 Machine Learning project 2
 
 Within the framework of the EPFL Machine Learning course, we collaborated
-with the city of lausanne to automate the recognition of defects in
+with the city of Lausanne to automate the recognition of defects in
 sewer pipes. To this goal we trained the neural networks _RESNet50_,
 _EfficientNetB1_ and _EfficientNetB7_ on CCTV videos from the pipes. Our
 purpose was to detect two main defects, namely roots and cracks.
@@ -18,9 +18,9 @@ Delete the file [ẗo_be_deleted](weights/to_be_deleted.md)  and
 replace it by the files found in 
 https://drive.google.com/drive/folders/1sT-3jq-_CUohp4oVf3I1E3U3O1r5cnEF?usp=sharing
 
-## Librairies used
+## Libraries used
 
-Before running any code, make sure you have all the librairies needed.
+Before running any code, make sure you have all the libraries needed.
 If not, open a terminal and run
 `pip3 install $name_of_the_package`
 
@@ -48,10 +48,10 @@ are trained using the train data and validated with the valid batches.
 
 ### Fine tuning
 
-_EfficientNetB1_ was finetuned using the notebook
+_EfficientNetB1_ was fine-tuned using the notebook
 [EfficientNetB1_finetune.ipynb](EfficientNetB1_finetune.ipynb).
 Transfer learning was applied first, subsequently the last
-10 layers were unfrozen (excepting batch normalisation).
+10 layers were unfrozen (excepting batch normalization).
 The training is implemented using early stopping and
 the weights are saved for later use.
 
@@ -68,7 +68,7 @@ wrongly classified images are inspected.
 The notebook [analyze_video.ipynb](analyze_video.ipynb) is the most
 important for direct application. It takes a video as input and
 outputs a list of timestamps in which the model detects a defect
-(either fissure or racine). To apply this code to one of your video
+(either fissure or root). To apply this code to one of your video
 you need to change the content of the variable
 `video_file` by the path of your video.
 
