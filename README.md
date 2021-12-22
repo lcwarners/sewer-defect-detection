@@ -27,7 +27,7 @@ If not, open a terminal and run
 
 ## Architecture
 
-### Data augmentation
+### Data Augmentation
 
 % to do
 
