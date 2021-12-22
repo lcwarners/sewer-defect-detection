@@ -12,6 +12,8 @@ learning were implemented.
 ___Please note that we were unable to provide the data on which this mode
 was trained and evaluated due to its confidential nature.___
 
+->how to download weights
+
 ## Librairies used
 
 Before running any code, make sure you have all the librairies needed.
