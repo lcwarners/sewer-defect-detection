@@ -31,7 +31,8 @@ If not, open a terminal and run
 
 ### Comparison and Optimization
 
-The three notebooks in the directory [comparison_optimization](comparison_optimization) were used
+The three notebooks in the directory
+[comparison_optimization](comparison_optimization) were used
 to compare model performance of _ResNet50_, _EfficientNetB1_,
 and _EfficientNetB7_, immediately clear from the names of the notebooks.
 All notebooks work the same way: the batches are generated, the model is
@@ -42,23 +43,27 @@ are trained using the train data and validated with the valid batches.
 ### Fine tuning
 
 _EfficientNetB1_ was finetuned using the notebook
-__EfficientNetB1_finetune.ipynb__. Transfer learning was
-applied first, subsequently the last 10 layers were unfrozen (excepting
-batch normalisation). The training is implemented using early stopping and
+[EfficientNetB1_finetune.ipynb](EfficientNetB1_finetune.ipynb).
+Transfer learning was applied first, subsequently the last
+10 layers were unfrozen (excepting batch normalisation).
+The training is implemented using early stopping and
 the weights are saved for later use.
 
 ### Prediction and Visualization
 
-In the notebook __prediction_visualization.ipynb__, the weights are
-loaded and used to generate predictions on a test batch of 600 images.
-The accuracy is calculated and the wrongly classified images are inspected.
+In the notebook
+[prediction_visualization.ipynb](prediction_visualization.ipynb),
+the weights are loaded and used to generate predictions
+on a test batch of 600 images. The accuracy is calculated and the
+wrongly classified images are inspected.
 
 ### Analyze Video 
 
-The notebook __analyze_video.ipynb__ is the most important for direct
-application. It takes a video as input and outputs a list of timestamps
-in which the model detects a defect (either fissure or racine). To apply 
-this code to one of your video you need to change the content of the variable
+The notebook [analyze_video.ipynb](analyze_video.ipynb) is the most
+important for direct application. It takes a video as input and
+outputs a list of timestamps in which the model detects a defect
+(either fissure or racine). To apply this code to one of your video
+you need to change the content of the variable
 `video_file` by the path of your video.
 
 ### Active Learning
@@ -66,3 +71,5 @@ this code to one of your video you need to change the content of the variable
 % to do
 
 ## License
+
+[MIT](LICENSE)
