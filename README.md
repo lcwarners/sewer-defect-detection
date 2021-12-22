@@ -33,7 +33,12 @@ If not, open a terminal and run
 
 ### Data Augmentation
 
-% to do
+In order to train models on a sufficiently large dataset, we needed to 
+use data augmentation. On the notebook
+[DataAugmentation](DataAugmentation.ipynb) is implemented a code 
+which take as input a set of labelled pictures, and which create several 
+transformation of each image, keeping the same label, to increase the 
+robustness and the accuracy of the model.
 
 ### Comparison and Optimization
 
