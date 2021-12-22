@@ -1,4 +1,5 @@
-# Sewer Defect Automated Detection Using Machine Learning -  CS-433 Machine Learning project 2
+# Sewer Defect Automated Detection Using Machine Learning
+### CS-433 Machine Learning project 2
 
 Within the framework of the EPFL Machine Learning course, we collaborated
 with the city of lausanne to automate the recognition of defects in
