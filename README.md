@@ -22,6 +22,7 @@ https://drive.google.com/drive/folders/1sT-3jq-_CUohp4oVf3I1E3U3O1r5cnEF?usp=sha
 
 Before running any code, make sure you have all the libraries needed.
 If not, open a terminal and run
+
 `pip3 install $name_of_the_package`
 
 * The neural networks are implemented via _tensorflow_.
@@ -36,7 +37,7 @@ If not, open a terminal and run
 In order to train models on a sufficiently large dataset, we needed to 
 use data augmentation. On the notebook
 [DataAugmentation](DataAugmentation.ipynb) is implemented a code 
-which take as input a set of labelled pictures, and which create several 
+which take as input a set of labeled pictures, and which create several 
 transformation of each image, keeping the same label, to increase the 
 robustness and the accuracy of the model.
 
