@@ -3,8 +3,8 @@
 
 Within the framework of the EPFL Machine Learning course, we collaborated
 with the city of lausanne to automate the recognition of defects in
-sewer pipes. To this goal we trained the neural networks RESNet50,
-EfficientNetB1 and EfficientNetB7 on CCTV videos from the pipes. Our
+sewer pipes. To this goal we trained the neural networks _RESNet50_,
+_EfficientNetB1_ and _EfficientNetB7_ on CCTV videos from the pipes. Our
 purpose was to detect two main defects, namely roots and cracks.
 Data augmentation, comparison of these three models, and active 
 learning were implemented.
@@ -25,33 +25,42 @@ If not, open a terminal and run
 
 ## Architecture
 
-### Comparison and optimisation
+## Data augmentation
 
-The three notebooks in this directory were used to compare model
-performance of ResNet50, EfficientNetB1, and EfficientNetB7,
-immediately clear from the names of the notebooks. All notebooks work the
-same way: the batches are generated, the model is downloaded
-and dense layers appended, and the original model is frozen such that it
-functions as feature extractor. The added dense layers are trained using
-the train data and validated with the valid batches.
+% to do
+
+### Comparison and Optimization
+
+The three notebooks in the directory __comparison_optimization__ were used
+to compare model performance of _ResNet50_, _EfficientNetB1_,
+and _EfficientNetB7_, immediately clear from the names of the notebooks.
+All notebooks work the same way: the batches are generated, the model is
+downloaded and dense layers appended, and the original model is frozen
+in such a way that it works as feature extractor. The added dense layers
+are trained using the train data and validated with the valid batches.
 
 ### Fine tuning
 
-EfficientNetB1 was finetuned using this notebook. Transfer learning was
+_EfficientNetB1_ was finetuned using the notebook
+__EfficientNetB1_finetune.ipynb__. Transfer learning was
 applied first, subsequently the last 10 layers were unfrozen (excepting
 batch normalisation). The training is implemented using early stopping and
 the weights are saved for later use.
 
-### prediction and visualisation
+### Prediction and Visualization
 
-In this notebook, the weights are loaded and used to generate predictions
-on a test batch of 600 images. The accuracy is calculated and the wrongly
-classified images are inspected.
+In the notebook __prediction_visualization.ipynb__, the weights are
+loaded and used to generate predictions on a test batch of 600 images.
+The accuracy is calculated and the wrongly classified images are inspected.
 
-### analyze video 
+### Analyze Video 
 
-This notebook is most important for direct application. It takes a video as
-input and outputs a list of timestamps in which the model detects a defect
-(either fissure or racine). 
+The notebook __analyze_video.ipynb__ is the most important for direct
+application. It takes a video as input and outputs a list of timestamps
+in which the model detects a defect (either fissure or racine). To apply 
+this code to one of your video you need to change the content of the variable
+`video_file` by the path of your video.
 
-### active learning
+### Active Learning
+
+% to do
