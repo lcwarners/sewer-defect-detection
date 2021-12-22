@@ -6,6 +6,8 @@ with the city of lausanne to automate the recognition of defects in
 sewer pipes. To this goal we trained the neural networks RESNet50,
 EfficientNetB1 and EfficientNetB7 on CCTV videos from the pipes. Our
 purpose was to detect two main defects, namely roots and cracks.
+Data augmentation, comparison of these three models, and active 
+learning were implemented.
 
 ___Please note that we were unable to provide the data on which this mode
 was trained and evaluated due to its confidential nature.___
@@ -21,21 +23,19 @@ If not, open a terminal and run
 * To deal with arrays, _numpy_ is needed.
 * To handle videos files, _os_ and _moviepy_ are used.
 
-
-
 ## Architecture
 
-### comparison and optimisation
+### Comparison and optimisation
 
-The three notebooks in these directories were used to compare model
+The three notebooks in this directory were used to compare model
 performance of ResNet50, EfficientNetB1, and EfficientNetB7,
-immediately clear from the names of the notebooks. The working of the
-notebooks is identical: the batches are generated, the model is downloaded
+immediately clear from the names of the notebooks. All notebooks work the
+same way: the batches are generated, the model is downloaded
 and dense layers appended, and the original model is frozen such that it
 functions as feature extractor. The added dense layers are trained using
 the train data and validated with the valid batches.
 
-### fine tuning
+### Fine tuning
 
 EfficientNetB1 was finetuned using this notebook. Transfer learning was
 applied first, subsequently the last 10 layers were unfrozen (excepting
