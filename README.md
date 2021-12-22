@@ -68,7 +68,7 @@ wrongly classified images are inspected.
 The notebook [analyze_video.ipynb](analyze_video.ipynb) is the most
 important for direct application. It takes a video as input and
 outputs a list of timestamps in which the model detects a defect
-(either fissure or root). To apply this code to one of your video
+(either crack or root). To apply this code to one of your video
 you need to change the content of the variable
 `video_file` by the path of your video.
 
