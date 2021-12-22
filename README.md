@@ -14,7 +14,7 @@ was trained and evaluated due to its confidential nature.___
 
 To use the model, you need to download the weights obtained by 
 training, and place them in the directory [weights](weights).
-Delete the file [ẗo_be_deleted](weights/to_be_deleted.md)  and
+Delete the file [to_be_deleted](weights/to_be_deleted.md)  and
 replace it by the files found in 
 https://drive.google.com/drive/folders/1sT-3jq-_CUohp4oVf3I1E3U3O1r5cnEF?usp=sharing
 
