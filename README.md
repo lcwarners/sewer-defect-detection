@@ -1,8 +1,13 @@
 # Sewer Defect Automated Detection Using Machine Learning
 
-##CS-433 Machine Learning project 2
+## CS-433 Machine Learning project 2
 
-%intro
+Within the framework of the EPFL Machine Learning course, we collaborated
+with the city of lausanne to automate the recognition of defects in
+sewer pipes. To this goal we trained the neural networks RESNet50,
+EfficientNetB1 and EfficientNetB7 on CCTV videos from the pipes. Our
+purpose was to detect two main defects, namely roots and cracks.
+
 ___Please note that we were unable to provide the data on which this mode
 was trained and evaluated due to its confidential nature.___
 
