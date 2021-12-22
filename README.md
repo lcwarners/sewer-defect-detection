@@ -31,7 +31,7 @@ If not, open a terminal and run
 
 ### Comparison and Optimization
 
-The three notebooks in the directory __comparison_optimization__ were used
+The three notebooks in the directory [comparison_optimization](doc:comparison_optimization) were used
 to compare model performance of _ResNet50_, _EfficientNetB1_,
 and _EfficientNetB7_, immediately clear from the names of the notebooks.
 All notebooks work the same way: the batches are generated, the model is
@@ -64,3 +64,5 @@ this code to one of your video you need to change the content of the variable
 ### Active Learning
 
 % to do
+
+## License
