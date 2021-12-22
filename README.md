@@ -29,6 +29,7 @@ If not, open a terminal and run
 * For plots we will need _matplotlib_, _sklearn_ and _itertools_.
 * To deal with arrays, _numpy_ is needed.
 * To handle videos files, _os_ and _moviepy_ are used.
+* To label data for active learning the library _superintendent_ was used.
 
 ## Architecture
 
