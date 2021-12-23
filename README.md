@@ -3,7 +3,7 @@
 
 Within the framework of the EPFL Machine Learning course, we collaborated
 with the city of Lausanne to automate the recognition of defects in
-sewer pipes. To this goal we trained the neural networks _RESNet50_,
+sewer pipes. To this goal we trained the neural networks _ResNet50_,
 _EfficientNetB1_ and _EfficientNetB7_ on CCTV videos from the pipes. Our
 purpose was to detect two main defects, namely roots and cracks.
 Data augmentation, comparison of these three models, and active 
