@@ -81,7 +81,7 @@ you need to change the content of the variable
 
 ### Active Learning
 
-In the notebook []() is our implementation of active learning, using the
+In the notebook [Active_Learning](Active_Learning.ipynb) is our implementation of active learning, using the
 _Jupyter_ interface. The active learning interface requires _Python 3.7.11_
 and _TensorFlow 2.7.0_.
 
