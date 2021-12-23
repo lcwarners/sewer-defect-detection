@@ -31,6 +31,8 @@ If not, open a terminal and run
 * To handle videos files, _os_ and _moviepy_ are used.
 * To label data for active learning the library _superintendent_ was used.
 
+The active learning interface requires Python 3.7.11 and TensorFlow 2.7.0.
+
 ## Architecture
 
 ### Data Augmentation
