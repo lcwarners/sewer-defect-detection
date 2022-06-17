@@ -9,7 +9,7 @@ purpose was to detect two main defects, namely roots and cracks.
 Data augmentation, comparison of these three models, and active 
 learning were implemented.
 
-___Please note that we were unable to provide the data on which this mode
+___Please note that we were unable to provide the data on which this model
 was trained and evaluated due to its confidential nature.___
 
 To use the model, you need to download the weights obtained by 
